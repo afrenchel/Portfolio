@@ -59,7 +59,8 @@
   text-transform: capitalize;
 
   span {
-    color: var(--secondary-color);
+    color: var(--brown-color);
+    vertical-align: middle;
   }
 
   @media screen and (min-width: 2000px) {
@@ -75,6 +76,7 @@
   font-size: 0.8rem;
   text-align: left;
   color: var(--gray-color);
+  font-weight: 500;
   line-height: 1.5;
 
   @media screen and (min-width: 2000px) {
@@ -106,8 +108,8 @@
   padding: 1rem;
 
   div {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--white-color);
     margin: 0.25rem 0;
@@ -120,14 +122,17 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 15px;
-      height: 15px;
+      width: 22px;
+      height: 22px;
       color: var(--gray-color);
+    }
+    .svg-in {
+      color: #0077b5;
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: var(--brown-color);
+      border-color: var(--brown-color);
 
       svg {
         color: var(--white-color);
@@ -166,7 +171,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-      background-color: var(--secondary-color);
+      background-color: var(--brown-color);
     }
 
     @media screen and (min-width: 2000px) {

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { BiCodeAlt } from "react-icons/bi";
 
 import { AppWrap } from "../../wrapper";
 import { images } from "../../constants";
@@ -25,16 +26,20 @@ const Header = () => (
     >
       <div className="app__header-badge">
         <div className="badge-cmp app__flex">
-          <span>👋</span>
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Alina</h1>
+
+            <h1 className="head-text">
+              <span>
+                <BiCodeAlt />
+              </span>
+              Alina
+            </h1>
           </div>
         </div>
 
         <div className="tag-cmp app__flex">
-          <p className="p-text">Web Developer</p>
-          <p className="p-text">Freelancer</p>
+          <p className="p-text">Frontend Developer</p>
         </div>
       </div>
     </motion.div>

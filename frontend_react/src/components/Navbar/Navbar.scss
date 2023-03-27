@@ -13,23 +13,33 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
   position: fixed;
   z-index: 2;
-}
 
-.app__navbar-logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  span {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--gray-color);
 
-  img {
-    width: 90px;
-    height: 20px;
-
-    @media screen and (min-width: 2000px) {
-      width: 180px;
-      height: 40px;
+    svg {
+      vertical-align: middle;
     }
   }
 }
+
+// .app__navbar-logo {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+
+//   img {
+//     width: 90px;
+//     height: 20px;
+
+//     @media screen and (min-width: 2000px) {
+//       width: 180px;
+//       height: 40px;
+//     }
+//   }
+// }
 
 .app__navbar-links {
   flex: 1;
