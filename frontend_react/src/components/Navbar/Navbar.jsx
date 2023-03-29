@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import { images } from "../../constants";
+import { navlinks } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -8,14 +8,16 @@ import { BiCodeAlt } from "react-icons/bi";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
   return (
     <nav className="app__navbar">
-      <span>
-        ALINA <BiCodeAlt />
-      </span>
+      <div className="navbar-logo">
+        <span>ALINA</span>
+        <BiCodeAlt />
+      </div>
 
       <ul className="app__navbar-links">
-        {["home", "about", "work", "skills", "contact"].map((item) => (
+        {navlinks.map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`}>{item}</a>

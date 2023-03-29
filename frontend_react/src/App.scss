@@ -46,8 +46,10 @@
   align-items: flex-end;
 
   p {
-    text-transform: uppercase;
     color: var(--black-color);
+  }
+  .heart-icon {
+    color: red;
   }
 }
 
@@ -59,7 +61,13 @@
   text-transform: capitalize;
 
   span {
-    color: var(--brown-color);
+    background-image: linear-gradient(
+      to left,
+      rgba(105, 32, 137, 0.8),
+      rgba(183, 83, 176, 0.8)
+    );
+    background-clip: text;
+    color: transparent;
     vertical-align: middle;
   }
 
@@ -101,7 +109,7 @@
 
 .app__social {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 

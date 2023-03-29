@@ -16,13 +16,10 @@ const Testimonial = () => {
     const brandsQuery = '*[_type == "brands"]';
 
     client.fetch(query).then((data) => {
-      console.log("testImonialdata", data);
       setTestimonials(data);
     });
 
     client.fetch(brandsQuery).then((data) => {
-      console.log("brandsdata", data);
-
       setBrands(data);
     });
   }, []);

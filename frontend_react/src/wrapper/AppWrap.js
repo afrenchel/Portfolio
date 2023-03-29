@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationDots, SocialMedia } from "../components";
 
-const AppWrap = (Component, idName, classNames) =>
+const AppWrap = (Component, idName, classNames = "") =>
   function HOC() {
     return (
       <div id={idName} className={`app__container ${classNames}`}>
@@ -10,8 +10,10 @@ const AppWrap = (Component, idName, classNames) =>
           <Component />
 
           <div className="copyright">
-            <p className="p-text">@2023 ALINA</p>
-            <p className="p-text">All rights reserved</p>
+            <p className="p-text">
+              built with <span className="heart-icon"> &#10084;</span> by ALINA
+            </p>
+            <p className="p-text">&copy;All rights reserved 2023</p>
           </div>
         </div>
         <NavigationDots active={idName} />

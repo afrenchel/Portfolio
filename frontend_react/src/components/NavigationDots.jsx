@@ -2,10 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
 import React from "react";
+import { navlinks } from "../constants";
 
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
-    {["home", "work", "skills", "testimonial", "contact"].map((item, index) => (
+    {navlinks.map((item, index) => (
       <a
         href={`#${item}`}
         key={item + index}
