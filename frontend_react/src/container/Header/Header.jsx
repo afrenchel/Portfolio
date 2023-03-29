@@ -38,7 +38,7 @@ const Header = () => (
           <Lottie animationData={helloLottie} style={lottieStyles} />
           <div className="greetings-cmp">
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Alina</h1>
+            <h1 className="head-text">Alinaa</h1>
           </div>
         </div>
 
