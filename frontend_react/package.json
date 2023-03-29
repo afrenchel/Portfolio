@@ -1,6 +1,7 @@
 {
   "name": "frontend_react",
   "version": "0.1.0",
+  "homepage": "https://alina-frenchel.site/",
   "private": true,
   "dependencies": {
     "@sanity/client": "^5.2.2",
