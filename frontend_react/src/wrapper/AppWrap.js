@@ -13,7 +13,9 @@ const AppWrap = (Component, idName, classNames = "") =>
             <p className="p-text">
               built with <span className="heart-icon"> &#10084;</span> by ALINA
             </p>
-            <p className="p-text">&copy;All rights reserved 2023</p>
+            <p className="p-text">
+              &copy;All rights reserved {new Date().getFullYear()}
+            </p>
           </div>
         </div>
         <NavigationDots active={idName} />
