@@ -14,5 +14,7 @@ export default {
       type: 'array',
       of: [{type: 'workExperience'}],
     },
+    
+    
   ],
 }

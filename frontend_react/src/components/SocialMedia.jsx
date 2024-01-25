@@ -1,5 +1,6 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
+import {TbFileDownload} from "react-icons/tb"
 
 import { AiFillGithub } from "react-icons/ai";
 const SocialMedia = () => (
@@ -17,6 +18,12 @@ const SocialMedia = () => (
         <AiFillGithub />
       </a>
     </div>
+    <div>
+      <a href='https://drive.google.com/file/d/1ptqeNiv8LRSnjn7ibymPnE54FZQ0wmfP/view?usp=drive_link' target="_blank" download>
+        <TbFileDownload/>
+      </a>
+    </div>
+    
   </div>
 );
 
